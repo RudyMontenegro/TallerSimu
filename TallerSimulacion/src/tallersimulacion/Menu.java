@@ -6,7 +6,7 @@
 package tallersimulacion;
 
 /**
- *
+ *dsd
  * @author Rodolfo
  */
 public class Menu extends javax.swing.JFrame {
