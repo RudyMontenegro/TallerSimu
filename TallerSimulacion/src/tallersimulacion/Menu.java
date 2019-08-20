@@ -107,7 +107,9 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
+            
+            Ventana v1 = new Ventana();
+            v1.setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
