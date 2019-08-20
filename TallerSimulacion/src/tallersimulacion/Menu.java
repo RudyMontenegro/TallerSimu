@@ -10,10 +10,11 @@ package tallersimulacion;
  * @author Rodolfo
  */
 public class Menu extends javax.swing.JFrame {
-
+IUComposicion ventanaComposicion;
     /**
      * Creates new form Menu
      */
+    
     public Menu() {
         initComponents();
     }
@@ -56,9 +57,9 @@ public class Menu extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(190, 310, 139, 50);
+        jButton2.setBounds(190, 310, 144, 50);
 
-        jButton3.setText("Compisicion");
+        jButton3.setText("Composicion");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -84,7 +85,7 @@ public class Menu extends javax.swing.JFrame {
 
         jLabel3.setText("Taller de simulacion de sistemas");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(20, 380, 151, 20);
+        jLabel3.setBounds(20, 380, 155, 20);
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tallersimulacion/menu.png"))); // NOI18N
         jLabel5.setText("jLabel5");
@@ -104,6 +105,8 @@ public class Menu extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+        ventanaComposicion=new IUComposicion();
+        ventanaComposicion.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
