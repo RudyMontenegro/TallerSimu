@@ -10,9 +10,10 @@ public class Inversa extends javax.swing.JFrame {
     /**
      * Creates new form Menu
      */
-    InvUniforme invUn;
+    public InvUniforme invUn;
     InvExponencial invE;
     InvEmpirica invEmp;
+    
     public Inversa() {
         initComponents();
     }
@@ -24,7 +25,7 @@ public class Inversa extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    public void initComponents() {
 
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
@@ -34,7 +35,7 @@ public class Inversa extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.HIDE_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(660, 420));
         getContentPane().setLayout(null);
 
@@ -97,6 +98,7 @@ public class Inversa extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed

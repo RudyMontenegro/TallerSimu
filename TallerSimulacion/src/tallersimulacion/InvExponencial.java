@@ -50,7 +50,7 @@ public class InvExponencial extends JFrame {
 	 * Create the frame.
 	 */
 	public InvExponencial() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
 		setBounds(100, 100, 450, 360);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -68,8 +68,8 @@ public class InvExponencial extends JFrame {
 		contentPane.add(lblFuncionAcumulada);
 		
 		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Carlos\\Pictures\\webcast\\exp.PNG"));
-		lblNewLabel.setBounds(161, 36, 128, 48);
+		lblNewLabel.setIcon(new ImageIcon(getClass().getResource("/tallersimulacion/exp3.png")));
+		lblNewLabel.setBounds(161, 36, 190, 68);
 		contentPane.add(lblNewLabel);
 		
 		JLabel lblLambda = new JLabel("Lambda =");
@@ -108,7 +108,7 @@ public class InvExponencial extends JFrame {
 		contentPane.add(lblResultado);
 		
 		aleatExp = new JTextField();
-		aleatExp.setBounds(130, 211, 99, 21);
+		aleatExp.setBounds(130, 211, 99, 28);
 		contentPane.add(aleatExp);
 		aleatExp.setColumns(10);
 		
@@ -135,17 +135,17 @@ public class InvExponencial extends JFrame {
 				aleatExp.setText(null);
 			}
 		});
-		btnLimpiar.setBounds(77, 267, 89, 23);
+		btnLimpiar.setBounds(180, 267, 89, 23);
 		contentPane.add(btnLimpiar);
 		
-		JButton btnSalir = new JButton("Salir");
+		/*JButton btnSalir = new JButton("Salir");
 		btnSalir.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				System.exit(0);
+				
 			}
 		});
 		btnSalir.setBounds(230, 267, 89, 23);
-		contentPane.add(btnSalir);
+		contentPane.add(btnSalir);*/
 	}
 
 }

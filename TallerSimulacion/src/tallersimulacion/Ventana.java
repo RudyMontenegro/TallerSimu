@@ -118,7 +118,7 @@ public class Ventana extends javax.swing.JFrame {
             .addGap(0, 100, Short.MAX_VALUE)
         );
 
-        jLabel10.setIcon(new javax.swing.ImageIcon("C:\\Users\\Rodolfo\\Pictures\\Formula.png")); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tallersimulacion/Formula.png"))); // NOI18N
 
         jButton3.setText("Salir");
         jButton3.addActionListener(new java.awt.event.ActionListener() {

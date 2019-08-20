@@ -27,6 +27,10 @@ public class InvUniforme extends JFrame {
 	private JTextField b;
 	private JTextField aleatorio;
 	private JTextField AleatorioUnif;
+        
+        
+        
+        
 
 	/**
 	 * Launch the application.
@@ -38,7 +42,7 @@ public class InvUniforme extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					InvUniforme frame = new InvUniforme();
+				      InvUniforme frame = new InvUniforme();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -51,7 +55,7 @@ public class InvUniforme extends JFrame {
 	 * Create the frame.
 	 */
 	public InvUniforme() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
 		setBounds(100, 100, 509, 376);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -75,7 +79,7 @@ public class InvUniforme extends JFrame {
 		lblValorA.setFont(new Font("Tahoma", Font.PLAIN, 13));
 		
 		a = new JTextField();
-		a.setBounds(77, 78, 88, 20);
+		a.setBounds(77, 78, 88, 28);
 		a.setColumns(10);
 		
 		JLabel lblValorB = new JLabel("Valor b =");
@@ -83,7 +87,7 @@ public class InvUniforme extends JFrame {
 		lblValorB.setFont(new Font("Tahoma", Font.PLAIN, 13));
 		
 		b = new JTextField();
-		b.setBounds(79, 116, 86, 20);
+		b.setBounds(79, 116, 86, 28);
 		b.setColumns(10);
 		
 		JLabel lblNumeroPseudoalea = new JLabel("Numero Pseudoaleatorio=");
@@ -91,7 +95,7 @@ public class InvUniforme extends JFrame {
 		lblNumeroPseudoalea.setFont(new Font("Tahoma", Font.PLAIN, 13));
 		
 		aleatorio = new JTextField();
-		aleatorio.setBounds(181, 155, 86, 20);
+		aleatorio.setBounds(181, 155, 86, 28);
 		aleatorio.setColumns(10);
 		
 		JButton btnGenrarNumero = new JButton("Generar Numero");
@@ -104,7 +108,7 @@ public class InvUniforme extends JFrame {
 			}
 			
 		});
-		btnGenrarNumero.setBounds(319, 154, 111, 23);
+		btnGenrarNumero.setBounds(319, 154, 130, 38);
 		
 		JButton btnCalcular = new JButton("Calcular");
 		btnCalcular.addActionListener(new ActionListener() {
@@ -151,16 +155,15 @@ public class InvUniforme extends JFrame {
 			AleatorioUnif.setText(null);
 			}
 		});
-		btnLimpiar.setBounds(97, 281, 89, 23);
+		btnLimpiar.setBounds(180, 281, 89, 23);
 		contentPane.add(btnLimpiar);
-		
-		JButton btnSalir = new JButton("Salir");
-		btnSalir.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				System.exit(0);
-			}
-		});
-		btnSalir.setBounds(279, 281, 89, 23);
-		contentPane.add(btnSalir);
+                
+		//JButton btnSalir = new JButton("Salir");
+		////	public void actionPerformed(ActionEvent e) {
+			   
+		//	}
+		//});
+		//btnSalir.setBounds(279, 281, 89, 23);
+		//contentPane.add(btnSalir);
 	}
 }

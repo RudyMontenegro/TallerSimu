@@ -50,7 +50,7 @@ public class InvEmpirica extends JFrame {
 	 * Create the frame.
 	 */
 	public InvEmpirica() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
 		setBounds(100, 100, 450, 401);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -68,8 +68,8 @@ public class InvEmpirica extends JFrame {
 		contentPane.add(lblFuncionAcumulada);
 		
 		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Carlos\\Pictures\\webcast\\emp.PNG"));
-		lblNewLabel.setBounds(142, 41, 134, 53);
+		lblNewLabel.setIcon(new ImageIcon(getClass().getResource("/tallersimulacion/empirico.png")));
+		lblNewLabel.setBounds(142, 41, 134, 56);
 		contentPane.add(lblNewLabel);
 		
 		JLabel lblGeneradorCongruencalMixto = new JLabel("Generador Congruencal Mixto");
@@ -83,7 +83,7 @@ public class InvEmpirica extends JFrame {
 		contentPane.add(a);
 		
 		ctteadi = new JTextField();
-		ctteadi.setBounds(79, 136, 34, 20);
+		ctteadi.setBounds(79, 136, 34, 30);
 		contentPane.add(ctteadi);
 		ctteadi.setColumns(10);
 		
@@ -98,7 +98,7 @@ public class InvEmpirica extends JFrame {
 		contentPane.add(m);
 		
 		mod = new JTextField();
-		mod.setBounds(79, 163, 34, 20);
+		mod.setBounds(79, 163, 34, 30);
 		contentPane.add(mod);
 		mod.setColumns(10);
 		
@@ -109,12 +109,12 @@ public class InvEmpirica extends JFrame {
 		
 		sem = new JTextField();
 		sem.setColumns(10);
-		sem.setBounds(237, 164, 34, 20);
+		sem.setBounds(237, 164, 34, 30);
 		contentPane.add(sem);
 		
 		cttemulti = new JTextField();
 		cttemulti.setColumns(10);
-		cttemulti.setBounds(237, 136, 34, 20);
+		cttemulti.setBounds(237, 136, 34, 30);
 		contentPane.add(cttemulti);
 		
 		JButton btnGenerar = new JButton("Generar");
@@ -177,17 +177,17 @@ public class InvEmpirica extends JFrame {
 				numAlet.setText(null);
 			}
 		});
-		btnLimpiar.setBounds(89, 316, 89, 23);
+		btnLimpiar.setBounds(180, 316, 89, 23);
 		contentPane.add(btnLimpiar);
 		
-		JButton btnSalir = new JButton("Salir");
+		/*JButton btnSalir = new JButton("Salir");
 		btnSalir.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.exit(0);
 			}
 		});
 		btnSalir.setBounds(208, 316, 89, 23);
-		contentPane.add(btnSalir);
+		contentPane.add(btnSalir);*/
 	}
 
 }
