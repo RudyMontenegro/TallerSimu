@@ -1,22 +1,19 @@
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
- * and open the template in the editor
+ * and open the template in the editor.
  */
 package tallersimulacion;
 
-/**
- *dsd
- * @author Rodolfo
- */
-public class Menu extends javax.swing.JFrame {
-IUComposicion ventanaComposicion;
-Inversa inv;
+public class Inversa extends javax.swing.JFrame {
+
     /**
      * Creates new form Menu
      */
-    
-    public Menu() {
+    InvUniforme invUn;
+    InvExponencial invE;
+    InvEmpirica invEmp;
+    public Inversa() {
         initComponents();
     }
 
@@ -42,43 +39,38 @@ Inversa inv;
         getContentPane().setLayout(null);
 
         jButton1.setFont(new java.awt.Font("Yu Gothic UI", 0, 11)); // NOI18N
-        jButton1.setText("Transformada Inversa");
+        jButton1.setText("Distribucion Uniforme");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                inv=new Inversa();
-                inv.setVisible(true);
+                invUn = new InvUniforme();
+                invUn.setVisible(true);
                 jButton1ActionPerformed(evt);
             }
         });
         getContentPane().add(jButton1);
         jButton1.setBounds(10, 310, 160, 50);
 
-        jButton2.setText("Aceptacion y Rechazo");
+        jButton2.setText("Distribucion Exponencial");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
+                invE= new InvExponencial();
+                invE.setVisible(true);
                 jButton2ActionPerformed(evt);
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(190, 310, 144, 50);
+        jButton2.setBounds(190, 310, 170, 50);
 
-        jButton3.setText("Composicion");
+        jButton3.setText("Distribucion Empirica");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
+                invEmp= new InvEmpirica();
+                invEmp.setVisible(true);
                 jButton3ActionPerformed(evt);
             }
         });
         getContentPane().add(jButton3);
-        jButton3.setBounds(340, 310, 120, 50);
-
-        jButton4.setText("Directo");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton4);
-        jButton4.setBounds(480, 310, 120, 50);
+        jButton3.setBounds(400, 310, 170, 50);
 
         jLabel2.setBackground(new java.awt.Color(102, 102, 102));
         jLabel2.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 20)); // NOI18N
@@ -100,6 +92,7 @@ Inversa inv;
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -108,14 +101,12 @@ Inversa inv;
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        ventanaComposicion=new IUComposicion();
-        ventanaComposicion.setVisible(true);
+       
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
             
-            Ventana v1 = new Ventana();
-            v1.setVisible(true);
+            
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
