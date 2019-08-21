@@ -12,6 +12,7 @@ package tallersimulacion;
 public class Menu extends javax.swing.JFrame {
 IUComposicion ventanaComposicion;
 Inversa inv;
+Rechazo rechazo;
     /**
      * Creates new form Menu
      */
@@ -104,6 +105,9 @@ Inversa inv;
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        rechazo=new Rechazo();
+        rechazo.setVisible(true);
+        
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
